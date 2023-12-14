@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Afacad:wght@500&family=Agbalumo&family=Edu+TAS+Beginner:wght@600&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,400;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+html body {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+#nav {
+    display: Flex;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    color: black;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+
+#logo {
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+#item a {
+    text-decoration: none;
+    margin: 0 2vw;
+    color: rgb(15, 15, 15);
+    font-size: 17px;
+    font-weight: 600;
+
+}
+
+#icon {
+    display: flex;
+    align-items: center;
+
+
+}
+
+#icon i {
+    margin: 0 5px;
+    font-size: 27px;
+    cursor: pointer;
+
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 50%;
+    align-items: center;
+
+    position: relative;
+    background-color: black;
+    opacity: .6;
+    color: white;
+
+}
+
+/* #left #text {
+    height: 100%;
+    width: 100%;
+  position: absolute;
+  top:050%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  
+
+} */
+#left #text {
+    height: 100%;
+    width: 100%;
+    margin-top: 11vw;
+    padding-left: 6vw;
+
+
+}
+
+#left #text h1 {
+    font-size: 4vw;
+
+
+}
+
+#left #text p {
+    margin-top: 2vw;
+    width: 31vw;
+
+}
+
+#btn button {
+    padding: .9vw .9vw;
+    margin-top: 3vw;
+    background-color: #00A650;
+    color: #E6FFF0;
+    font-weight: 700;
+    font-size: 1.5vw;
+    border-radius: 10px;
+
+
+}
+
+#btn button:hover {
+    color: rgb(244, 238, 238);
+    background-color: transparent;
+
+    cursor: pointer;
+
+}
+
+#right {
+    height: 80vh;
+    top: 0;
+    left: 0;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1592806088932-05058af0ad8d?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#item i{
+    display: none;
+}
+
+.mid {
+    display: flex;
+}
+
+#bottom {
+    background-color: green;
+    height: 10vh;
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    #main{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    #nav h1 {
+        font-size: 24px;
+
+    }
+
+    #nav {
+        border: none;
+        width: 100%;
+    }
+   #item a{
+    display: none;
+   }
+   #item i{
+    display: initial;
+   }
+.mid{
+    display: flex;
+    flex-direction: column;
+
+}
+.mid #right{
+    width: 100%;
+    border: 32px;
+   
+}
+#left #text p{
+
+    font-size: 12px;
+    width: 100%;
+}
+#left #btn button{
+    background-color: rgba(185, 47, 47, 0.234);
+    border: none;
+    font-size: 12px;
+    padding: 10px 10px;
+    
+}
+.mid #left{
+    width: 100%;
+    height: auto;
+}
+    
+
+}
